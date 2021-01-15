@@ -1,0 +1,167 @@
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    width: 99vw;
+    height: 2500px;
+    /* height: 14040px; */
+    font-family: 'Noto Serif KR', serif;
+    background-color: black;
+}
+body{ -ms-overflow-style: none; }
+::-webkit-scrollbar { display: none; }
+
+table{
+    border:0px;
+    margin:0px;
+}
+tr{
+    width:100%;
+}
+#wrap{
+    width:100vw;
+    height:100%;
+}
+section{
+    width:100%;
+    height:950px;
+    /* padding:0; */
+    padding: 150px 0 150px 0;
+}
+#sns{
+    background-color:white;
+    padding:0px;
+}
+#sns>div{
+    text-align: center;
+    height:100%;
+    width:25%;
+    float:left;
+    cursor: pointer;
+}
+.kakao{
+    background-color:rgba(255, 251, 0, 0.596);
+}
+.blog{
+    background-color:orange;
+}
+.github{
+    background-color:#2f363d;
+}
+.instagram{
+    background-color:pink;
+}
+#sns img{
+    width:50%;
+    margin-top: 300px;
+    vertical-align: middle;
+}
+.kakao img{/*이미지 크기가 다름*/
+    margin-top:330px !important;
+}
+.inner{
+    margin:0 auto;
+    width: 1600px;
+}
+#intro > .inner{    
+    background-color: black;
+    color:white;
+    /* background-image: url('https://i.ibb.co/zhZfrmm/lion.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+}
+#intro > .inner > p{
+    width:100%;
+    font-size:78px;    
+    color:white;
+    padding-top:100px;
+}
+.subtext{
+    color:white;
+    width:100%;
+    padding-left:5px;
+    padding-top:30px;
+    font-size:25px;
+}
+/*============소개section==============*/
+#about{
+    width:100vw;
+}
+#about, #about>.inner{
+    background-color: white;
+}
+#about>.inner{
+    position:relative;
+}
+.title{
+}
+.title > p{
+    font-weight:bold;
+    font-size:64px;
+}
+.photo{
+    padding-top:50px;    
+}
+.photo > img{    
+    position:center;
+    width:270px;
+}
+.name{
+    padding-top:20px;
+    font-size:26px;
+}
+.name > p{  
+    font-weight:bold;  
+    font-size:40px;
+}
+strong:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #222;
+    margin: 25px 0;
+}
+.subname{
+    font-size:20px;
+}
+.left{
+    position: absolute;
+    left:450px;
+    top:100px;
+    /* background-color: black; */
+    /* width:360px; */
+    height:600px;
+}
+.aboutme >p{
+    font-size:45px;    
+}
+.aboutme{
+    font-size:20px;
+}
+.left p{
+    color:#0364a5;
+    margin-top:60px;
+    padding-bottom: 10px;
+}
+.right{
+    position: absolute;
+    left:980px;
+    top:160px;
+    /* background-color: blue; */
+    height:600px;
+}
+.tit{
+    padding-top:70px;
+    font-size: 30px;
+    line-height: 1em;
+    font-family: 'Montserrat', sans-serif;
+    color: #0364a5;
+    margin-bottom: 15px;
+}
+ul{
+    list-style: none;
+    font-size:17px;
+}

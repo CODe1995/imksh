@@ -1,0 +1,13 @@
+/* Scroll Animation (sa, 스크롤 애니메이션) */
+.sa {
+    opacity: 0;
+    transition: all .5s ease;
+}
+/* 아래에서 위로 페이드 인 */
+.sa-up {
+    transform: translate(0, 100px);
+}
+.sa.show {
+    opacity: 1;
+    transform: none;
+}
