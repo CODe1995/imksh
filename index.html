@@ -25,13 +25,13 @@
                 </div>
             </section>
             <section id="intro">
-                <div class="inner sa sa-up">
+                <div class="inner sa">
                     <p>어제보다 성장한 개발자.<br>강승현입니다</p>
                     <div class="subtext">2019 ~ 2021 Datas</div>
                 </div>
             </section>
             <section id="about">
-                <div class="inner sa sa-up">
+                <div class="inner sa">
                     <div class="title">
                         <p>또 뵙네요.</p>
                     </div>
@@ -133,6 +133,7 @@
             </section>
             
         </div>
+        <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     </body>
     <script>
         // Scroll Animation (sa, 스크롤 애니메이션)
@@ -145,6 +146,10 @@
               if (window.innerHeight > element.getBoundingClientRect().top + saTriggerMargin) {
                 element.classList.add('show');
               }
+            //   else{
+            //       element.classList.remove('show');
+            //       element.classList.remove('sa-up');
+            //   }
             }
           }
         }

@@ -95,8 +95,6 @@ section{
 #about>.inner{
     position:relative;
 }
-.title{
-}
 .title > p{
     font-weight:bold;
     font-size:64px;
