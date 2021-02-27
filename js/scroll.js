@@ -5,7 +5,7 @@ var scrollYPos = 0;     //스크롤 위치값과 사진을 매칭시켜주는 �
 var ctx = canvas.getContext('2d');
 var ds = document.scrollingElement;
 var maxHeight = ds.scrollHeight-ds.clientHeight;
-var maximgNum = 235;   //준비한 이미지의 갯수
+var maximgNum = 350;   //준비한 이미지의 갯수
 var root = "./res/img/";//이미지 경로
 img.src=root+"1.jpg";
 
