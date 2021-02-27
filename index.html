@@ -10,24 +10,12 @@
     </header>
     <body>
         <div id="wrap">
-            <section id="sns">
-                <div class="kakao" onclick="window.open('https\:\/\/open.kakao.com/o/sjksIDEb')">
-                    <img src="style/kakao.png">
-                </div>
-                <div class="blog" onclick="window.open('http\:\/\/www.imksh.com')">
-                    <img src="style/tistory.png">
-                </div>
-                <div class="github" onclick="window.open('https\:\/\/github.com/CODe1995')">
-                    <img src="style/github.png">
-                </div>
-                <div class="instagram" onclick="window.open('https\:\/\/instagram.com/1d1kkang')">
-                    <img src="style/instagram.png">
-                </div>
-            </section>
-            <section id="intro">
-                <div class="inner sa">
+            <div id="img_sequence">
+                <canvas id="background" width="1920" height="1080"></canvas>
+            </div>
+            <section id="intro" >
+                <div class="inner sa">                    
                     <p>어제보다 성장한 개발자.<br>강승현입니다</p>
-                    <div class="subtext">2019 ~ 2021 Datas</div>
                 </div>
             </section>
             <section id="about">
@@ -36,7 +24,7 @@
                         <p>또 뵙네요.</p>
                     </div>
                     <div class="photo">
-                        <img src="style/profile.png">
+                        <img src="res/profile.png">
                     </div>
                     <div class="name">
                         매일 성장하는 개발자
@@ -57,10 +45,6 @@
                         1995. 12. 22<br>
                         010 - 5486 - 1467<br>
                         서울특별시 관악구 신림동<br><br>
-                        #ESTJ #장난기 #열정 #친화력<br>
-                        #학업욕심 #헬린이 #팝송<br>
-                        #피아노 #요리 #노래방좋아<br>
-                        #술좋아 #절제잘해
                         <ul>
                             <li class="tit">EDUCATION</li>
                             <li>2021. 02　　인제대학교 컴퓨터공학부 정보보호 졸업</li>
@@ -131,11 +115,32 @@
                     </div>
                 </div>
             </section>
+            <section id="sns">
+                <div class="kakao slide" onclick="window.open('https\:\/\/open.kakao.com/o/sjksIDEb')">
+                    <img src="res/kakao.png">
+                </div>
+                <div class="blog slide" onclick="window.open('http\:\/\/www.imksh.com')">
+                    <img src="res/tistory.png">
+                </div>
+                <div class="github slide" onclick="window.open('https\:\/\/github.com/CODe1995')">
+                    <img src="res/github.png">
+                </div>
+                <div class="instagram slide" onclick="window.open('https\:\/\/instagram.com/1d1kkang')">
+                    <img src="res/instagram.png">
+                </div>
+            </section>
             
         </div>
         <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="/js/scroll.js"></script>
     </body>
     <script>
+        if($('#sns > div.kakao.slide').is(':visible')==false){
+            console.log('안보임');
+        }
+        else{
+            console.log('보임');
+        }
         // Scroll Animation (sa, 스크롤 애니메이션)
         const saTriggerMargin = 300;
         const saElementList = document.querySelectorAll('.sa');
