@@ -1,0 +1,109 @@
+/*공통 옵션*/
+*{
+    margin:0px;  
+    color:white;
+    /*overflow-y:hidden;/*세로 스크롤바 숨기고 스크롤 불가*/    
+}
+body::-webkit-scrollbar{
+    display:none; /*크롬 스크롤바 숨기고 스크롤 가능*/
+}
+html{
+    width:100vw;
+    height:100vh;
+    background-color: #1a1a1a;
+}
+#background{
+    width:100%;/*전체 width에 맞게 background 사이즈 조정*/
+}
+img{
+    width:300px;
+}
+#img_sequence{
+    position: relative;
+}
+#intro_comments{
+    font-family: 'Noto Serif KR', serif;  /*intro에만 적용하는 폰트*/
+    position:absolute;
+    top:15vw;
+    left:5vw;
+    font-size: 5vw;   
+}
+p{
+    font-size:5vw;
+}
+th{
+    text-align: center;
+}
+ul{
+    text-align: center;
+    padding-left:2vw;
+    margin-bottom: 1vh;
+    list-style: none;
+}
+table{
+    margin-left: auto;
+    margin-right:auto;
+}
+td{
+    padding-right:1vw;
+}
+#aboutdiv>div{
+    margin-top: 5vh;
+}
+table{
+    border-top: solid 1px;
+}
+@media(min-width:1100px){ /*이력 좌우정렬 가능한 width*/
+    *{
+        /* background-color:darkslategray; */
+    }
+    .education{
+        /* background-color: red;  */
+        width:50%; 
+        float:left; 
+        height:20vh;    
+    }
+    .award{
+        /* background-color: blue; */
+        width:50%;
+        float:left;
+        height:20vh;    
+    }
+    .career{
+        /* background-color: skyblue; */
+        width:50%;
+        float:left;
+        height:20vh;
+    }
+    .experience{
+        /* background-color: green; */
+        width:50%;
+        float:left;
+        height:20vh;
+    }
+    .project{
+        /* background-color: bisque; */
+        width:100%;
+        float:left;
+        height:25vh;
+    }
+
+}
+
+/*mobiile view*/
+@media(max-width:800px){
+    *{
+        /* background-color: blue;         */
+    }
+    img{
+        width:150px;
+    }
+    p{
+        font-size: 30px;
+    }
+    table{
+        font-size:3.2vw;
+        padding-left:1vw;
+        width:100%;
+    }
+}
