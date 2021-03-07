@@ -7,6 +7,9 @@ var context = canvas.getContext('2d');
 var root = "./res/img/";
 var maximgNum = 350;
 
+img.src = root+"1.jpg";
+context.drawImage(img,0,0);//시작하면 로딩전까지 임시 이미지 사용
+
 var imgs = []; //이미지 배열
 
 for(let i =1;i<=maximgNum;i++){
