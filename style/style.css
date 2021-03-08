@@ -14,6 +14,7 @@ html{
 }
 #background{
     width:100%;/*전체 width에 맞게 background 사이즈 조정*/
+    background-image: url('/res/img/1.jpg');
 }
 img{
     width:300px;
